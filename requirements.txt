@@ -1,5 +1,5 @@
 pandas
 numpy
-pickle
+gunicorn
 scikit-learn
 streamlit 

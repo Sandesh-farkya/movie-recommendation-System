@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 # Load and display the background image
-background_image = Image.open("C:\\Users\\sporw\\Desktop\\movie recom\\code\\image.jpg")  # Replace with your image path
+background_image = Image.open("image.jpg")  # Replace with your image path
 st.image(background_image)
 
 def fetch_poster(movie_id):
@@ -81,10 +81,10 @@ def recommend(movie):
     return recommended_movies, recommended_movies_posters
 
 # Load the movie data and similarity matrix
-movies_dict = pickle.load(open('C:\\Users\\sporw\\Desktop\\movie recom\\code\\movie_dict.pkl', 'rb'))
+movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('C:\\Users\\sporw\\Desktop\\movie recom\\code\\similarity.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # Streamlit app title
 st.title('Movie Recommendation System')
