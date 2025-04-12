@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 # Load and display the background image
-background_image = Image.open("C:\\Users\\sporw\\Desktop\\movie recom\\code\\image.jpg")  # Replace with your image path
+background_image = Image.open("image.jpg")  # Replace with your image path
 st.image(background_image)
 
 def fetch_poster(movie_id):
