@@ -3,3 +3,7 @@ numpy
 gunicorn
 scikit-learn
 streamlit 
+gdown
+pandas
+requests
+pillow
